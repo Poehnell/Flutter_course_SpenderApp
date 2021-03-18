@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import './widgets/user_transaction.dart';
 
-
 void main() {
   runApp(MyApp());
 }
@@ -27,6 +26,13 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Flutter App"),
+        actions: [
+          IconButton(
+              icon: Icon(
+                Icons.add,
+              ),
+              onPressed: () {})
+        ],
       ),
       body: SingleChildScrollView(
         child: Column(
